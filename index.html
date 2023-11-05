@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visco Calculator</title>
+
+    <style>
+        body{
+            display: flex;
+            /* justify-content: center; */
+            justify-items: center;
+            padding: 10rem;
+            align-items: center;
+            flex-direction: column;
+            background-color: aqua;
+        }
+        
+.head {
+    border: 3px solid black;
+    color: white;
+    background-color: rgb(31, 60, 189);
+    width: 18%;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.3rem;
+}
+.container{
+    border: 3px solid black;
+}
+input[type="button"]{
+    background: #000;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    padding: 0.5rem 0.5rem;
+}
+input[type="text"]{
+    width: 100%;
+    border: 2px solid black;
+    padding: 0.5rem 0.5rem;
+}
+#result{
+    font-size:0.8rem;
+}
+    </style>
+</head>
+<body>
+    <div class="head">Visco Calculator</div>
+    <table class="container">
+        <tr>
+            <td colspan="3"><input type="text" placeholder="Enter the number" id="result"></td>
+            <td><input type="button" id="btnc" value="C" onclick="clr()"></td>
+        </tr>
+
+<tr>
+    <td><input type="button" value="1" onclick="display('1')"></td>
+    <td><input type="button" value="2" onclick="display('2')"></td>
+    <td><input type="button" value="3" onclick="display('3')"></td>
+    <td><input type="button" value="/" onclick="display('/')"></td>
+</tr>
+<tr>
+    <td><input type="button" value="4" onclick="display('4')"></td>
+    <td><input type="button" value="5" onclick="display('5')"></td>
+    <td><input type="button" value="6" onclick="display('6')"></td>
+    <td><input type="button" value="+" onclick="display('+')"></td>
+</tr>
+<tr>
+    <td><input type="button" value="7" onclick="display('7')"></td>
+    <td><input type="button" value="8" onclick="display('8')"></td>
+    <td><input type="button" value="9" onclick="display('9')"></td>
+    <td><input type="button" value="-" onclick="display('-')"></td>
+</tr>
+<tr>
+    <td><input type="button" value="0" onclick="display('0')"></td>
+    <td><input type="button" value="*" onclick="display('*')"></td>
+    <td><input type="button" value="=" onclick="equate('=')"></td>
+    <td><input type="button" value="." onclick="display('.')"></td>
+</tr>
+    </table>
+
+
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
